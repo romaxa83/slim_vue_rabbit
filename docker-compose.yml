@@ -1,0 +1,31 @@
+version: '3'
+services:
+    frontend-nginx:
+        build:
+            context: ./frontend/docker
+            dockerfile: nginx.docker
+        volumes:
+            - ./frontend:/var/www/frontend
+        ports:
+            - "8080:80"
+    frontend-nodejs:
+        image: node:10.11-jessie
+        volumes:
+            - ./frontend:/var/www/frontend
+        working_dir: /var/www/frontend
+        tty: true  #позволяет процесу nodejs висеть постояно
+
+    api-nginx:
+        build:
+            context: ./api/docker
+            dockerfile: nginx.docker
+        volumes:
+            -  ./api:/var/www/api
+        ports:
+            - "8081:80"
+    api-php-fpm:
+        build:
+            context: ./api/docker
+            dockerfile: php-fpm.docker
+        volumes:
+            - ./api:/var/www/api    
