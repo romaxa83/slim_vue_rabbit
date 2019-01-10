@@ -1,0 +1,23 @@
+{
+    "name": "slim/test",
+    "description": "Test project with slim,vue,rabbitMq",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rodomanov Roman",
+            "email": "romaxa83@ukr.net"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "^1.5",
+        "slim/slim": "^3.11"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    }
+}

@@ -32,6 +32,14 @@
 </script>
 
 <style lang="scss">
+//переопределяем переменый scss
+ // @import "assets/scss/_variables.scss"
+$primary: #337ab7;
+$success: #4db24d;
+$info:    #5bc0de;
+$warning: #f0ad4e;
+$danger:  #d9534f;
+
   @import "~bootstrap/scss/bootstrap";
   @import "~bootstrap-vue/dist/bootstrap-vue.css";
   @import "~@fortawesome/fontawesome-free/css/all.css";
