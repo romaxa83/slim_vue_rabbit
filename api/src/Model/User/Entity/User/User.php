@@ -3,7 +3,11 @@ declare(strict_types=1);
 
 namespace Api\Model\User\Entity\User;
 
+use Api\Model\AggregateRoot;
+use Api\Model\EventTrait;
 use Doctrine\ORM\Mapping as ORM;
+use Api\Model\User\Entity\User\Event\UserConfirmed;
+use Api\Model\User\Entity\User\Event\UserCreated;
 
 /**
  * @ORM\Entity
@@ -13,8 +17,10 @@ use Doctrine\ORM\Mapping as ORM;
  * })
  */
 
-class User
+class User implements AggregateRoot
 {
+    use EventTrait;
+
     private const STATUS_WAIT = 'wait';
     private const STATUS_ACTIVE = 'active';
 
@@ -64,6 +70,7 @@ class User
         $this->passwordHash = $passwordHash;
         $this->confirmToken = $confirmToken;
         $this->status = self::STATUS_WAIT;
+        $this->recordEvent(new UserCreated($this->id,$this->email,$this->confirmToken));
     }
 
     public function confirmSignup(string $token, \DateTimeImmutable $date): void

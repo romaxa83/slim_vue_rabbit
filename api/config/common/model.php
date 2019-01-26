@@ -4,17 +4,27 @@ declare(strict_types=1);
 
 use Api\Infrastructure;
 use Api\Infrastructure\Model\User as UserInfrastructure;
-use Api\Infrastructure\Model\Video as VideoInfrastructure;
+//use Api\Infrastructure\Model\Video as VideoInfrastructure;
 use Api\Model\User as UserModel;
-use Api\Model\Video as VideoModel;
-use Api\ReadModel;
+//use Api\Model\Video as VideoModel;
+//use Api\ReadModel;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Container\ContainerInterface;
 
 return [
     Api\Model\Flusher::class => function (ContainerInterface $container) {
         return new Api\Infrastructure\Model\Service\DoctrineFlusher(
-            $container->get(EntityManagerInterface::class)
+            $container->get(EntityManagerInterface::class),
+            $container->get(Api\Model\EventDispatcher::class)
+        );
+    },
+
+    UserModel\UseCase\SignUp\Request\Handler::class => function (ContainerInterface $container) {
+        return new UserModel\UseCase\SignUp\Request\Handler(
+            $container->get(UserModel\Entity\User\UserRepository::class),
+            $container->get(UserModel\Service\PasswordHasher::class),
+            $container->get(UserModel\Service\ConfirmTokenizer::class),
+            $container->get(Api\Model\Flusher::class)
         );
     },
 

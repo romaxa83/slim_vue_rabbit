@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 namespace Api\Http\Action\Auth\SignUp;
 
 use Api\Http\ValidationException;
@@ -26,7 +27,7 @@ class RequestAction implements RequestHandlerInterface
     {
         $command = $this->deserialize($request);
 
-        if ($errors => $this->validator->validate($command)) {
+        if ($errors = $this->validator->validate($command)) {
             throw new ValidationException($errors);
         }
         

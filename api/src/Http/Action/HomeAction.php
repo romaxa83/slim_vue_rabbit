@@ -9,8 +9,8 @@ use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Zend\Diactoros\Response\JsonResponse;
 
-// class HomeAction implements RequestHandlerInterface
-class HomeAction
+ class HomeAction implements RequestHandlerInterface
+//class HomeAction
 {
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
