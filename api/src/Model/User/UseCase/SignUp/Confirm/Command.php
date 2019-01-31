@@ -4,8 +4,17 @@ declare(strict_types=1);
 
 namespace Api\Model\User\UseCase\SignUp\Confirm;
 
+use Symfony\Component\Validator\Constraints as Assert;
+
 class Command
 {
-	public $email;
-	public $token;
+    /**
+     * @Assert\NotBlank()
+     * @Assert\Email()
+     */
+    public $email;
+    /**
+     * @Assert\NotBlank()
+     */
+    public $token;
 }

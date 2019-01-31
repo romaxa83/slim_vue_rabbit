@@ -43,16 +43,24 @@ return [
     },
 
     Action\Auth\SignUp\RequestAction::class => function (ContainerInterface $container) {
-//    var_dump($container);die();
+
         return new Action\Auth\SignUp\RequestAction(
             $container->get(Model\User\UseCase\SignUp\Request\Handler::class),
             $container->get(Validator::class)
         );
     },
-//    Action\Auth\SignUp\ConfirmAction::class => function (ContainerInterface $container) {
-//        return new Action\Auth\SignUp\ConfirmAction(
-//            $container->get(Model\User\UseCase\SignUp\Confirm\Handler::class),
-//            $container->get(Validator::class)
-//        );
-//    },
+
+    Action\Auth\SignUp\ConfirmAction::class => function (ContainerInterface $container) {
+        return new Action\Auth\SignUp\ConfirmAction(
+            $container->get(Model\User\UseCase\SignUp\Confirm\Handler::class),
+            $container->get(Validator::class)
+        );
+    },
+
+    Action\Auth\OAuthAction::class => function (ContainerInterface $container) {
+        return new Action\Auth\OAuthAction(
+            $container->get(\League\OAuth2\Server\AuthorizationServer::class),
+            $container->get(LoggerInterface::class)
+        );
+    },
 ];

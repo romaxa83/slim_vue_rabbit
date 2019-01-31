@@ -31,7 +31,16 @@
 </template>
 
 <script>
-  export default {
-    name: 'Nav'
-  }
+    export default {
+        name: 'Nav',
+        methods: {
+            logout(event) {
+                event.preventDefault();
+                this.$store.dispatch('logout')
+                    .then(() => {
+                    this.$router.push({name: 'login'});
+            })
+            }
+        }
+    }
 </script>

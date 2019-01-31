@@ -24,21 +24,35 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        form: {
-          email: null,
-          password: null,
+    export default {
+        data() {
+            return {
+                form: {
+                    email: this.$store.state.currentEmail,
+                    password: null,
+                },
+                error: null
+            }
+        },
+        methods: {
+            login(event) {
+                event.preventDefault();
+                this.error = null;
+                this.$store.dispatch('login', {
+                    username: this.form.email,
+                    password: this.form.password,
+                })
+                    .then(() => {
+                    this.$router.push({name: 'home'});
+            })
+            .catch(error => {
+                    if (error.response) {
+                    this.error = error.response.data.error;
+                } else {
+                    console.log(error.message);
+                }
+            });
+            }
         }
-      }
-    },
-    methods: {
-      login(event) {
-        event.preventDefault();
-        alert('Login with ' + this.$data.form.email);
-        return false;
-      }
     }
-  }
 </script>

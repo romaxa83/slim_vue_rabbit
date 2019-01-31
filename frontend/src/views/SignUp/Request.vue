@@ -45,12 +45,13 @@
 
 <script>
   import axios from "axios";
+
   export default {
     data() {
       return {
         form: {
           email: '',
-          password: '',
+          password: ''
         },
         error: null,
         errors: []

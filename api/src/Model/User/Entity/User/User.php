@@ -67,7 +67,7 @@ class User implements AggregateRoot
         $this->id = $id;
         $this->date = $date;
         $this->email = $email;
-        $this->passwordHash = $passwordHash;
+        $this->passwordHash = $hash;
         $this->confirmToken = $confirmToken;
         $this->status = self::STATUS_WAIT;
         $this->recordEvent(new UserCreated($this->id,$this->email,$this->confirmToken));

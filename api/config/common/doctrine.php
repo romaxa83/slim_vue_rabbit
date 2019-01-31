@@ -40,7 +40,8 @@ return [
 			'dev_mode' => false,
 			'cache_dir' => 'var/cache/doctrine',   //куда кешировать данные
 			'metadata_dirs' => [//с какой папки брать сущьности
-				'src/Model/User/Entity'
+				'src/Model/User/Entity',
+                'src/Model/OAuth/Entity',
 			],
 			'connection' => [
 				'url' => getenv('API_DB_URL'),
@@ -49,6 +50,8 @@ return [
 			'types' => [ //регистрация своих типов данных
 				Type\User\UserIdType::NAME => Type\User\UserIdType::class,
 				Type\User\EmailType::NAME => Type\User\EmailType::class,
+                Type\OAuth\ClientType::NAME => Type\OAuth\ClientType::class,
+                Type\OAuth\ScopesType::NAME => Type\OAuth\ScopesType::class,
 			],
 		]
 	]
