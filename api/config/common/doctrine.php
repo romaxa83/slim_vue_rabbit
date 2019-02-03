@@ -42,6 +42,7 @@ return [
 			'metadata_dirs' => [//с какой папки брать сущьности
 				'src/Model/User/Entity',
                 'src/Model/OAuth/Entity',
+                'src/Model/Video/Entity'
 			],
 			'connection' => [
 				'url' => getenv('API_DB_URL'),
@@ -52,6 +53,8 @@ return [
 				Type\User\EmailType::NAME => Type\User\EmailType::class,
                 Type\OAuth\ClientType::NAME => Type\OAuth\ClientType::class,
                 Type\OAuth\ScopesType::NAME => Type\OAuth\ScopesType::class,
+                Type\Video\AuthorIdType::NAME => Type\Video\AuthorIdType::class,
+                Type\Video\VideoIdType::NAME => Type\Video\VideoIdType::class,
 			],
 		]
 	]

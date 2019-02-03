@@ -29,16 +29,20 @@ services:
             dockerfile: php-fpm.docker
         volumes:
             - ./api:/var/www/api
+            - ./storage:/var/www/storage
         depends_on:
             - api-postgres
+            - mailer
     api-php-cli:
         build:
             context: ./api/docker
             dockerfile: php-cli.docker
         volumes:
             - ./api:/var/www/api
+            - ./storage:/var/www/storage
         depends_on:
-            - api-postgres    
+            - api-postgres
+            - mailer
         working_dir: /var/www/api
         tty: true 
 
@@ -68,4 +72,13 @@ services:
         restart: unless-stopped
         ports:
             - "1025:1025"
-            - "8082:8025"      
+            - "8082:8025"
+
+    storage-nginx:
+        build:
+            context: ./storage/docker
+            dockerfile: nginx.docker
+        volumes:
+            - ./storage:/var/www/storage
+        ports:
+            - "8083:80"

@@ -2,49 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b60de544-cd4f-4fd2-aeb4-3f48f44a9d48" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/config/common/oauth.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Auth/OAuthAction.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Profile/ShowAction.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/OAuth/ClientType.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/OAuth/ScopesType.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/AccessTokenRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/AuthCodeRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/ClientRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/RefreshTokenRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/ScopeRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/UserRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/OAuth/Entity/AccessTokenEntity.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/OAuth/Entity/AuthCodeEntity.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/OAuth/Entity/ClientEntity.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/OAuth/Entity/RefreshTokenEntity.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/OAuth/Entity/ScopeEntity.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/OAuth/Entity/UserEntity.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/config/common/video.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/CreateAction.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/ShowAction.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/Video/CreateAction.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/Video/IndexAction.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/Video/ShowAction.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Middleware/BodyParamsMiddleware.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/VideoUrl.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/Video/AuthorIdType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/Video/VideoIdType.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Entity/DoctrineAuthorRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Entity/DoctrineVideoRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegMp4Converter.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegWebmConverter.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/FormatDetector/FFProbeFormatDetector.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Thumbnailer/FFMpegThumbnailer.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Uploader/LocalUploader.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/User/DoctrineUserReadRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineAuthorReadRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineVideoReadRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/EntityNotFoundException.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Author/Author.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Author/AuthorId.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Author/AuthorRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Author/Event/AuthorCreated.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoCreated.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoFileAdded.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoPublished.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoRemoved.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/File.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Size.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Thumbnail.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Video.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/VideoId.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/VideoRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Converter/Converter.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Converter/Driver.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Format.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/FormatDetector.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Image.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Size.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Thumbnailer/Driver.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Thumbnailer/Thumbnailer.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Video.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Uploader.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Author/Create/Command.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Author/Create/Handler.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Create/Command.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Create/Handler.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Create/Preferences.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Edit/Command.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Edit/Handler.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Publish/Command.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Publish/Handler.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Remove/Command.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Remove/Handler.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/ReadModel/User/UserReadRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/ReadModel/Video/AuthorReadRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/ReadModel/Video/VideoReadRepository.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Author/Create.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Author/Show.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Author/Video/Show.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Author/Video/Upload.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Profile/Show.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/storage/docker/nginx.docker" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/storage/docker/nginx/default.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/storage/public/video/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/api/.env" afterPath="$PROJECT_DIR$/api/.env" />
       <change beforePath="$PROJECT_DIR$/api/.env.example" afterPath="$PROJECT_DIR$/api/.env.example" />
-      <change beforePath="$PROJECT_DIR$/api/.gitignore" afterPath="$PROJECT_DIR$/api/.gitignore" />
       <change beforePath="$PROJECT_DIR$/api/config/common/app.php" afterPath="$PROJECT_DIR$/api/config/common/app.php" />
       <change beforePath="$PROJECT_DIR$/api/config/common/doctrine.php" afterPath="$PROJECT_DIR$/api/config/common/doctrine.php" />
       <change beforePath="$PROJECT_DIR$/api/config/common/model.php" afterPath="$PROJECT_DIR$/api/config/common/model.php" />
       <change beforePath="$PROJECT_DIR$/api/config/routes.php" afterPath="$PROJECT_DIR$/api/config/routes.php" />
-      <change beforePath="$PROJECT_DIR$/api/src/Data/Migration/Version20190120160956.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/api/src/Http/Action/Auth/SignUp/ConfirmAction.php" afterPath="$PROJECT_DIR$/api/src/Http/Action/Auth/SignUp/ConfirmAction.php" />
-      <change beforePath="$PROJECT_DIR$/api/src/Model/User/Entity/User/ConfirmToken.php" afterPath="$PROJECT_DIR$/api/src/Model/User/Entity/User/ConfirmToken.php" />
-      <change beforePath="$PROJECT_DIR$/api/src/Model/User/Entity/User/User.php" afterPath="$PROJECT_DIR$/api/src/Model/User/Entity/User/User.php" />
-      <change beforePath="$PROJECT_DIR$/api/src/Model/User/UseCase/SignUp/Confirm/Command.php" afterPath="$PROJECT_DIR$/api/src/Model/User/UseCase/SignUp/Confirm/Command.php" />
+      <change beforePath="$PROJECT_DIR$/api/docker/php-fpm.docker" afterPath="$PROJECT_DIR$/api/docker/php-fpm.docker" />
+      <change beforePath="$PROJECT_DIR$/api/src/Data/Migration/Version20190131170730.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api/src/Http/Action/HomeAction.php" afterPath="$PROJECT_DIR$/api/src/Http/Action/HomeAction.php" />
+      <change beforePath="$PROJECT_DIR$/api/src/Http/Action/Profile/ShowAction.php" afterPath="$PROJECT_DIR$/api/src/Http/Action/Profile/ShowAction.php" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
       <change beforePath="$PROJECT_DIR$/frontend/dist/index.html" afterPath="$PROJECT_DIR$/frontend/dist/index.html" />
       <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/035a2623db44f563ee2a50e97a4452dc.json" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/035a2623db44f563ee2a50e97a4452dc.json" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/700721a61db7c98f33aade40fb073422.json" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/700721a61db7c98f33aade40fb073422.json" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/71f74eda3aec4fe5dff342f9b0ec4d05.json" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/71f74eda3aec4fe5dff342f9b0ec4d05.json" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Nav.vue" afterPath="$PROJECT_DIR$/frontend/src/components/Nav.vue" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" afterPath="$PROJECT_DIR$/frontend/src/main.js" />
       <change beforePath="$PROJECT_DIR$/frontend/src/router.js" afterPath="$PROJECT_DIR$/frontend/src/router.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store.js" afterPath="$PROJECT_DIR$/frontend/src/store.js" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Login.vue" afterPath="$PROJECT_DIR$/frontend/src/views/Login.vue" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/SignUp/Confirm.vue" afterPath="$PROJECT_DIR$/frontend/src/views/SignUp/Confirm.vue" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/SignUp/Request.vue" afterPath="$PROJECT_DIR$/frontend/src/views/SignUp/Request.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,64 +98,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/config/routes.php">
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowAction.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Profile/ShowAction.php">
+      <file leaf-file-name="FFProbeFormatDetector.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/FormatDetector/FFProbeFormatDetector.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="e#69#108#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/views/Login.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-77">
-              <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+            <state relative-caret-position="449">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/store.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1692">
-              <caret line="94" column="2" lean-forward="false" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="public.key" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/public.key">
+      <file leaf-file-name="php-cli.docker" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/docker/php-cli.docker">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -124,44 +128,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Nav.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/components/Nav.vue">
+      <file leaf-file-name="php-fpm.docker" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/docker/php-fpm.docker">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="36">
+              <caret line="2" column="72" lean-forward="false" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/.env">
+      <file leaf-file-name="19b9c359-c001-4f50-bbf4-321b41c72d3c_854x480.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/storage/public/video/19b9c359-c001-4f50-bbf4-321b41c72d3c_854x480.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateAction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/CreateAction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="36">
+              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OAuthAction.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Auth/OAuthAction.php">
+      <file leaf-file-name="Create.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Create.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="31" />
-              <folding>
-                <element signature="e#66#111#0#PHP" expanded="true" />
-              </folding>
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/config/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="26" column="69" lean-forward="false" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Show.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Show.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="69" column="9" lean-forward="false" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,53 +203,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/global/debug.php" />
-        <option value="$PROJECT_DIR$/api/composer.json" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Framework/Middleware/CallableMiddlewareAdapter.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Framework/Middleware/CallableRequestHandler.php" />
-        <option value="$PROJECT_DIR$/api/config/common/events.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/Flusher.php" />
-        <option value="$PROJECT_DIR$/api/src/Http/Action/HomeAction.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/User/UseCase/SignUp/Request/Handler.php" />
-        <option value="$PROJECT_DIR$/api/src/Http/Action/Auth/SignUp/RequestAction.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/User/Entity/User/Event/UserCreated.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/User/Entity/User/ConfirmToken.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/User/Entity/User/User.php" />
-        <option value="$PROJECT_DIR$/frontend/src/views/SignUp/Request.vue" />
-        <option value="$PROJECT_DIR$/frontend/src/router.js" />
-        <option value="$PROJECT_DIR$/frontend/src/views/SignUp/Confirm.vue" />
-        <option value="$PROJECT_DIR$/api/src/Http/Action/Auth/SignUp/ConfirmAction.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/User/UseCase/SignUp/Confirm/Command.php" />
-        <option value="$PROJECT_DIR$/api/config/common/model.php" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/api/src/Model/OAuth/Entity/AccessTokenEntity.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/OAuth/Entity/AuthCodeEntity.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/OAuth/Entity/ClientEntity.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/OAuth/Entity/RefreshTokenEntity.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/OAuth/Entity/ScopeEntity.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/OAuth/Entity/UserEntity.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/OAuth/ClientType.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/OAuth/ScopesType.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/AccessTokenRepositry.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/AuthCodeRepository.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/ClientRepository.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/RefreshTokenRepository.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/ScopeRepository.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/UserRepository.php" />
-        <option value="$PROJECT_DIR$/api/config/common/oauth.php" />
-        <option value="$PROJECT_DIR$/api/.env" />
-        <option value="$PROJECT_DIR$/api/.env.example" />
-        <option value="$PROJECT_DIR$/api/src/Http/Action/Auth/OAuthAction.php" />
+        <option value="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Converter/Converter.php" />
+        <option value="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Thumbnailer/Thumbnailer.php" />
+        <option value="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Create/Handler.php" />
         <option value="$PROJECT_DIR$/api/config/common/doctrine.php" />
-        <option value="$PROJECT_DIR$/api/config/common/app.php" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/api/config/routes.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/Video/AuthorIdType.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/Video/VideoIdType.php" />
+        <option value="$PROJECT_DIR$/api/src/Http/Action/HomeAction.php" />
+        <option value="$PROJECT_DIR$/api/src/ReadModel/User/UserReadRepository.php" />
+        <option value="$PROJECT_DIR$/api/src/ReadModel/Video/AuthorReadRepository.php" />
+        <option value="$PROJECT_DIR$/api/src/ReadModel/Video/VideoReadRepository.php" />
         <option value="$PROJECT_DIR$/api/src/Http/Action/Profile/ShowAction.php" />
-        <option value="$PROJECT_DIR$/frontend/src/views/Login.vue" />
-        <option value="$PROJECT_DIR$/frontend/src/store.js" />
-        <option value="$PROJECT_DIR$/frontend/src/components/Nav.vue" />
-        <option value="$PROJECT_DIR$/frontend/src/main.js" />
-        <option value="$PROJECT_DIR$/api/.gitignore" />
+        <option value="$PROJECT_DIR$/api/src/Http/Middleware/BodyParamsMiddleware.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Framework/Middleware/CallableMiddlewareAdapter.php" />
+        <option value="$PROJECT_DIR$/api/src/Http/Action/Author/ShowAction.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/User/DoctrineUserReadRepository.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineAuthorReadRepository.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineVideoReadRepository.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Entity/DoctrineAuthorRepository.php" />
+        <option value="$PROJECT_DIR$/api/src/Model/EntityNotFoundException.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Entity/DoctrineVideoRepository.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegMp4Converter.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegWebmConverter.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Thumbnailer/FFMpegThumbnailer.php" />
+        <option value="$PROJECT_DIR$/frontend/src/views/Profile/Show.vue.php" />
+        <option value="$PROJECT_DIR$/frontend/src/views/Profile/Show.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/views/Author/Create.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/views/Author/Show.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/views/Author/Video/Show.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/views/Author/Video/Upload.vue" />
+        <option value="$PROJECT_DIR$/api/src/Http/Action/Author/Video/CreateAction.php" />
+        <option value="$PROJECT_DIR$/api/src/Http/Action/Author/Video/IndexAction.php" />
+        <option value="$PROJECT_DIR$/api/src/Http/Action/Author/Video/ShowAction.php" />
+        <option value="$PROJECT_DIR$/api/src/Http/VideoUrl.php" />
+        <option value="$PROJECT_DIR$/api/config/common/model.php" />
+        <option value="$PROJECT_DIR$/api/config/common/app.php" />
+        <option value="$PROJECT_DIR$/api/config/common/video.php" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Uploader/LocalUploader.php" />
+        <option value="$PROJECT_DIR$/storage/public/.gitignore" />
+        <option value="$PROJECT_DIR$/storage/docker/nginx/default.conf" />
+        <option value="$PROJECT_DIR$/storage/docker/nginx.docker" />
+        <option value="$PROJECT_DIR$/api/.env.example" />
+        <option value="$PROJECT_DIR$/api/.env" />
+        <option value="$PROJECT_DIR$/frontend/src/router.js" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/api/config/routes.php" />
+        <option value="$PROJECT_DIR$/api/src/Global/debug.php" />
+        <option value="$PROJECT_DIR$/api/src/Http/Action/Author/CreateAction.php" />
+        <option value="$PROJECT_DIR$/api/composer.json" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/FormatDetector/FFProbeFormatDetector.php" />
+        <option value="$PROJECT_DIR$/api/docker/php-fpm.docker" />
       </list>
     </option>
   </component>
@@ -313,10 +346,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="229" />
-    <option name="y" value="420" />
-    <option name="width" value="1371" />
-    <option name="height" value="457" />
+    <option name="x" value="139" />
+    <option name="y" value="183" />
+    <option name="width" value="1361" />
+    <option name="height" value="546" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -333,6 +366,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -350,19 +384,111 @@
               <item name="slim" type="b2602c69:ProjectViewProjectNode" />
               <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Processor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Processor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FormatDetector" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="video" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/storage/public/video" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -393,17 +519,20 @@
       <workItem from="1548605521221" duration="5562000" />
       <workItem from="1548658434380" duration="1869000" />
       <workItem from="1548782388172" duration="18000" />
-      <workItem from="1548942869065" duration="13649000" />
+      <workItem from="1548942869065" duration="13787000" />
+      <workItem from="1549008919281" duration="7461000" />
+      <workItem from="1549111473300" duration="3152000" />
+      <workItem from="1549189512199" duration="14683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29773000" />
+    <option name="totallyTimeSpent" value="55207000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="229" y="420" width="1371" height="457" extended-state="0" />
+    <frame x="139" y="183" width="1361" height="546" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21663019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36590743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -431,333 +560,282 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/config/common/events.php">
+    <entry file="file://$PROJECT_DIR$/api/src/Http/Middleware/DomainExceptionMiddleware.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="35" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/common/logger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/common/mailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Auth/SignUp/ConfirmAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Validator/Errors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Validator/Validator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/ValidationException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/User/UseCase/SignUp/Confirm/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#82#104#0#PHP" expanded="false" />
+            <element signature="e#65#104#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/User/UseCase/SignUp/Confirm/Command.php">
+    <entry file="file://$PROJECT_DIR$/api/config/container.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/User/UseCase/SignUp/Request/Command.php">
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Framework/Middleware/CallableRequestHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Framework/Middleware/CallableMiddlewareAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#84#121#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Http/Middleware/ValidationExceptionMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Http/Middleware/BodyParamsMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#78#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/ShowAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#68#113#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/ReadModel/User/DoctrineUserReadRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#79#115#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineAuthorReadRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#79#120#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManagerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3457">
+          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineVideoReadRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="e#80#119#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Model/EntityNotFoundException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Entity/DoctrineVideoRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/User/Entity/User/ConfirmToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/OAuth/Entity/AccessTokenEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#67#99#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/OAuth/Entity/AuthCodeEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="e#67#99#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/OAuth/Entity/ClientEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#124#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/OAuth/Entity/RefreshTokenEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#100#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/OAuth/Entity/ScopeEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#123#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/OAuth/Entity/UserEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/OAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/OAuth/ClientType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#84#124#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/OAuth/ScopesType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#84#123#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/AccessTokenRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/AuthCodeRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#83#125#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/ClientRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#83#123#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/RefreshTokenRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#83#129#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/ScopeRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#83#122#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/OAuth/Entity/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#83#121#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/common/oauth.php">
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Thumbnailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegMp4Converter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#33#75#0#PHP" expanded="false" />
+            <element signature="e#104#159#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/.env.local">
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegWebmConverter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#104#159#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Thumbnailer/FFMpegThumbnailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#106#150#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/views/Profile/Show.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="73" lean-forward="false" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/bin/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Video/Show.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Video/Upload.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="81" column="9" lean-forward="false" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/Video/CreateAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#74#107#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Http/VideoUrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/Video/ShowAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#74#96#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/config/common/model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Data/Migration/Version20190131162211.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Data/Migration/Version20190131165739.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Data/Migration/Version20190120160956.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/common/doctrine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="53" column="76" lean-forward="false" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+        <state relative-caret-position="-1674">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/config/common/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="64" column="6" lean-forward="false" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+        <state relative-caret-position="-1285">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/private.key">
+    <entry file="file://$PROJECT_DIR$/api/config/common/video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#55#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Entity/DoctrineAuthorRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Uploader/LocalUploader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#93#130#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/public/video/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/docker/nginx.docker">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/docker/nginx.docker">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -765,122 +843,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="126">
-            <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="63" column="11" lean-forward="true" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="54">
-            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Auth/OAuthAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <element signature="e#66#111#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Profile/ShowAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#69#108#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/views/Login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Nav.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1692">
-          <caret line="94" column="2" lean-forward="false" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/public.key">
+    <entry file="file://$PROJECT_DIR$/api/docker/nginx/default.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/docker/nginx/default.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/docker/php/default.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/Video/IndexAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="288">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/.gitignore">
+    <entry file="file://$PROJECT_DIR$/api/var/log/app.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="-730">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="83" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Show.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="69" column="9" lean-forward="false" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Create.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="26" column="69" lean-forward="false" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Global/debug.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/CreateAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/FormatDetector/FFProbeFormatDetector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/docker/php-cli.docker">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/docker/php-fpm.docker">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="72" lean-forward="false" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/public/video/19b9c359-c001-4f50-bbf4-321b41c72d3c_854x480.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
