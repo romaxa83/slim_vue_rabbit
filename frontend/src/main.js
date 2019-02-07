@@ -38,6 +38,26 @@ resolve(axios(request))
 return Promise.reject(error)
 });
 });
+//работа с websocket
+const socket = new WebSocket(process.env.VUE_APP_WS_URL);
+
+socket.onopen = function(e) {
+    console.log('ws open on server --- %s',e.target.url);
+    if (user) {
+        socket.send(JSON.stringify({
+            type: 'auth',
+            token: user.access_token
+        }));
+    }
+};
+
+socket.onmessage = function(event) {
+    let data = JSON.parse(event.data);
+    console.log(data);
+    if (data.type === 'notification') {
+        store.commit('addNotification', data.message);
+    }
+};
 //vue использует компонент внутри себя
 Vue.use(BootstrapVue);
 

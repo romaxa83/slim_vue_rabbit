@@ -7,6 +7,7 @@
 
     <div class="app-content">
       <main class="container">
+        <Notifications/>
         <router-view/>
       </main>
     </div>
@@ -23,10 +24,12 @@
 <script>
 //подключаем компонент навигационого меню
   import Nav from '@/components/Nav.vue'
+  import Notifications from '@/components/Notifications.vue'
 //определяем на странице компоненты
   export default {
     components: {
-      Nav
+        Nav,
+        Notifications
     }
   }
 </script>

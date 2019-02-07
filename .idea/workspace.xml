@@ -2,89 +2,347 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b60de544-cd4f-4fd2-aeb4-3f48f44a9d48" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/config/common/video.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/CreateAction.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/ShowAction.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/Video/CreateAction.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/Video/IndexAction.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Action/Author/Video/ShowAction.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/Middleware/BodyParamsMiddleware.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Http/VideoUrl.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/Video/AuthorIdType.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/Video/VideoIdType.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Entity/DoctrineAuthorRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Entity/DoctrineVideoRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegMp4Converter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegWebmConverter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/FormatDetector/FFProbeFormatDetector.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Thumbnailer/FFMpegThumbnailer.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Uploader/LocalUploader.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/User/DoctrineUserReadRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineAuthorReadRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineVideoReadRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/EntityNotFoundException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Author/Author.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Author/AuthorId.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Author/AuthorRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Author/Event/AuthorCreated.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoCreated.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoFileAdded.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoPublished.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoRemoved.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/File.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Size.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Thumbnail.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Video.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/VideoId.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Entity/Video/VideoRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Converter/Converter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Converter/Driver.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Format.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/FormatDetector.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Image.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Size.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Thumbnailer/Driver.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Thumbnailer/Thumbnailer.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Video.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/Service/Uploader.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Author/Create/Command.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Author/Create/Handler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Create/Command.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Create/Handler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Create/Preferences.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Edit/Command.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Edit/Handler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Publish/Command.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Publish/Handler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Remove/Command.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Remove/Handler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/ReadModel/User/UserReadRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/ReadModel/Video/AuthorReadRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/ReadModel/Video/VideoReadRepository.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Author/Create.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Author/Show.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Author/Video/Show.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Author/Video/Upload.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/views/Profile/Show.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storage/docker/nginx.docker" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storage/docker/nginx/default.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storage/public/video/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/api/src/Infrastructure/Model/EventDispatcher/Listener/Video/VideoCreatedListeners.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/src/components/Notifications.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/.env" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/.env.example" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/LICENSE-MIT" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/callback_api.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/channel_api.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/headers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/receive_generator.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/send_generators.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/ssl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/emit_log.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/emit_log_direct.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/emit_log_topic.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/new_task.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/receive.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/receive_logs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/receive_logs_direct.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/receive_logs_topic.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/rpc_client.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/rpc_server.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/send.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/callback_api/worker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/emit_log.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/emit_log_direct.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/emit_log_topic.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/new_task.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/receive.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/receive_logs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/receive_logs_direct.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/receive_logs_topic.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/rpc_client.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/rpc_server.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/send.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/tutorials/worker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/examples/waitForConfirms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/api_args.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/bitset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/callback_model.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/channel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/channel_model.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/codec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/connect.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/connection.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/credentials.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/defs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/error.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/format.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/frame.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/heartbeat.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/lib/mux.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/bitset.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/callback_api.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/channel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/channel_api.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/codec.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/connect.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/connection.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/data.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/frame.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/mux.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/amqplib/test/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/coverage.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.js.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/lcov-report/base.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/lcov-report/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/lcov-report/prettify.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/lcov-report/prettify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/lcov-report/sort-arrow-sprite.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/lcov-report/sorter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/coverage/lcov.info" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/async-limiter/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/LICENSE-MIT" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/lib/compile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/lib/constructor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/lib/grammar.pegjs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/lib/interp.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/lib/parse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/lib/parser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/lib/pattern.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/test/consing.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bitsyntax/test/matching.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/changelog.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/browser/bluebird.core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/browser/bluebird.core.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/browser/bluebird.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/browser/bluebird.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/any.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/assert.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/async.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/bind.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/bluebird.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/call_get.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/cancel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/catch_filter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/context.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/debuggability.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/direct_resolve.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/each.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/errors.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/es5.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/filter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/finally.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/generators.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/join.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/map.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/method.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/nodeback.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/nodeify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/promise.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/promise_array.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/promisify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/props.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/queue.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/race.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/reduce.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/schedule.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/settle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/some.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/synchronous_inspection.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/thenables.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/timers.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/using.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/js/release/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/bluebird/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-equal-constant-time/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-equal-constant-time/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-equal-constant-time/LICENSE.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-equal-constant-time/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-equal-constant-time/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-equal-constant-time/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-equal-constant-time/test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-more-ints/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-more-ints/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-more-ints/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-more-ints/buffer-more-ints-tests.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-more-ints/buffer-more-ints.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-more-ints/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/buffer-more-ints/polyfill.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/core-util-is/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/core-util-is/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/core-util-is/float.patch" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/core-util-is/lib/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/core-util-is/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/core-util-is/test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/.coveralls.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/.eslintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/component.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/karma.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/node.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/src/browser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/src/debug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/src/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/src/inspector-log.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/debug/src/node.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/dotenv/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/dotenv/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/dotenv/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/dotenv/config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/dotenv/lib/cli-options.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/dotenv/lib/env-options.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/dotenv/lib/main.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/dotenv/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ecdsa-sig-formatter/CODEOWNERS" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ecdsa-sig-formatter/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ecdsa-sig-formatter/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ecdsa-sig-formatter/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ecdsa-sig-formatter/src/ecdsa-sig-formatter.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ecdsa-sig-formatter/src/param-bytes-for-alg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/fs/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/fs/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/inherits/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/inherits/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/inherits/inherits.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/inherits/inherits_browser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/inherits/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/isarray/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/isarray/build/build.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/isarray/component.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/isarray/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/isarray/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/decode.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/lib/JsonWebTokenError.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/lib/NotBeforeError.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/lib/TokenExpiredError.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/lib/timespan.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/node_modules/ms/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/node_modules/ms/license.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/node_modules/ms/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/node_modules/ms/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/sign.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jsonwebtoken/verify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jwa/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jwa/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jwa/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jwa/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jws/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jws/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jws/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jws/lib/data-stream.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jws/lib/sign-stream.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jws/lib/tostring.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jws/lib/verify-stream.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jws/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/jws/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.includes/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.includes/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.includes/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.includes/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isboolean/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isboolean/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isboolean/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isboolean/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isinteger/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isinteger/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isinteger/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isinteger/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isnumber/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isnumber/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isnumber/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isnumber/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isplainobject/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isplainobject/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isplainobject/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isplainobject/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isstring/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isstring/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isstring/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.isstring/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.once/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.once/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.once/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/lodash.once/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ms/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ms/license.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ms/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ms/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/querystringify/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/querystringify/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/querystringify/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/querystringify/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/duplex.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/float.patch" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/lib/_stream_duplex.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/lib/_stream_passthrough.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/lib/_stream_readable.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/lib/_stream_transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/lib/_stream_writable.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/passthrough.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/readable.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/transform.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/readable-stream/writable.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/requires-port/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/requires-port/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/requires-port/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/requires-port/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/requires-port/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/requires-port/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/requires-port/test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/safe-buffer/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/safe-buffer/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/safe-buffer/index.d.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/safe-buffer/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/safe-buffer/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/string_decoder/.npmignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/string_decoder/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/string_decoder/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/string_decoder/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/string_decoder/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/url-parse/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/url-parse/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/url-parse/dist/url-parse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/url-parse/dist/url-parse.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/url-parse/dist/url-parse.min.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/url-parse/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/url-parse/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/browser.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/buffer-util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/constants.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/event-target.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/extension.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/permessage-deflate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/receiver.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/sender.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/validation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/websocket-server.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/lib/websocket.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/node_modules/ws/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/websocket/public.key" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/api/.env" afterPath="$PROJECT_DIR$/api/.env" />
-      <change beforePath="$PROJECT_DIR$/api/.env.example" afterPath="$PROJECT_DIR$/api/.env.example" />
-      <change beforePath="$PROJECT_DIR$/api/config/common/app.php" afterPath="$PROJECT_DIR$/api/config/common/app.php" />
-      <change beforePath="$PROJECT_DIR$/api/config/common/doctrine.php" afterPath="$PROJECT_DIR$/api/config/common/doctrine.php" />
-      <change beforePath="$PROJECT_DIR$/api/config/common/model.php" afterPath="$PROJECT_DIR$/api/config/common/model.php" />
-      <change beforePath="$PROJECT_DIR$/api/config/routes.php" afterPath="$PROJECT_DIR$/api/config/routes.php" />
-      <change beforePath="$PROJECT_DIR$/api/docker/php-fpm.docker" afterPath="$PROJECT_DIR$/api/docker/php-fpm.docker" />
-      <change beforePath="$PROJECT_DIR$/api/src/Data/Migration/Version20190131170730.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/api/src/Http/Action/HomeAction.php" afterPath="$PROJECT_DIR$/api/src/Http/Action/HomeAction.php" />
-      <change beforePath="$PROJECT_DIR$/api/src/Http/Action/Profile/ShowAction.php" afterPath="$PROJECT_DIR$/api/src/Http/Action/Profile/ShowAction.php" />
+      <change beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
+      <change beforePath="$PROJECT_DIR$/frontend/.env.local" afterPath="$PROJECT_DIR$/frontend/.env.local" />
+      <change beforePath="$PROJECT_DIR$/frontend/.env.local.example" afterPath="$PROJECT_DIR$/frontend/.env.local.example" />
       <change beforePath="$PROJECT_DIR$/frontend/dist/index.html" afterPath="$PROJECT_DIR$/frontend/dist/index.html" />
-      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/035a2623db44f563ee2a50e97a4452dc.json" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/035a2623db44f563ee2a50e97a4452dc.json" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router.js" afterPath="$PROJECT_DIR$/frontend/src/router.js" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/700721a61db7c98f33aade40fb073422.json" afterPath="$PROJECT_DIR$/frontend/node_modules/.cache/babel-loader/700721a61db7c98f33aade40fb073422.json" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" afterPath="$PROJECT_DIR$/frontend/src/App.vue" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" afterPath="$PROJECT_DIR$/frontend/src/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,28 +356,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Makefile">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/websocket/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FFProbeFormatDetector.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/FormatDetector/FFProbeFormatDetector.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="php-cli.docker" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/docker/php-cli.docker">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -128,35 +376,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="php-fpm.docker" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/docker/php-fpm.docker">
+      <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="72" lean-forward="false" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
+            <state relative-caret-position="-1242">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notifications.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/components/Notifications.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="19b9c359-c001-4f50-bbf4-321b41c72d3c_854x480.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/storage/public/video/19b9c359-c001-4f50-bbf4-321b41c72d3c_854x480.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateAction.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/CreateAction.php">
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="194">
+              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+              <folding>
+                <element signature="e#420#458#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Create.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Create.vue">
+      <file leaf-file-name="VideoCreated.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoCreated.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -165,31 +420,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/config/routes.php">
+      <file leaf-file-name="VideoFileAdded.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoFileAdded.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="26" column="69" lean-forward="false" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/composer.json">
+      <file leaf-file-name="Video.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Video.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+            <state relative-caret-position="-1890">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Show.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Show.vue">
+      <file leaf-file-name="VideoCreatedListeners.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/EventDispatcher/Listener/Video/VideoCreatedListeners.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="69" column="9" lean-forward="false" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+            <state relative-caret-position="630">
+              <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoRemoved.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoRemoved.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -197,25 +462,20 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Converter/Converter.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/Video/Service/Processor/Thumbnailer/Thumbnailer.php" />
-        <option value="$PROJECT_DIR$/api/src/Model/Video/UseCase/Video/Create/Handler.php" />
-        <option value="$PROJECT_DIR$/api/config/common/doctrine.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/Video/AuthorIdType.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Doctrine/Type/Video/VideoIdType.php" />
-        <option value="$PROJECT_DIR$/api/src/Http/Action/HomeAction.php" />
-        <option value="$PROJECT_DIR$/api/src/ReadModel/User/UserReadRepository.php" />
-        <option value="$PROJECT_DIR$/api/src/ReadModel/Video/AuthorReadRepository.php" />
-        <option value="$PROJECT_DIR$/api/src/ReadModel/Video/VideoReadRepository.php" />
-        <option value="$PROJECT_DIR$/api/src/Http/Action/Profile/ShowAction.php" />
-        <option value="$PROJECT_DIR$/api/src/Http/Middleware/BodyParamsMiddleware.php" />
-        <option value="$PROJECT_DIR$/api/src/Infrastructure/Framework/Middleware/CallableMiddlewareAdapter.php" />
         <option value="$PROJECT_DIR$/api/src/Http/Action/Author/ShowAction.php" />
         <option value="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/User/DoctrineUserReadRepository.php" />
         <option value="$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineAuthorReadRepository.php" />
@@ -246,14 +506,27 @@
         <option value="$PROJECT_DIR$/api/.env.example" />
         <option value="$PROJECT_DIR$/api/.env" />
         <option value="$PROJECT_DIR$/frontend/src/router.js" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/api/config/routes.php" />
         <option value="$PROJECT_DIR$/api/src/Global/debug.php" />
         <option value="$PROJECT_DIR$/api/src/Http/Action/Author/CreateAction.php" />
         <option value="$PROJECT_DIR$/api/composer.json" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/FormatDetector/FFProbeFormatDetector.php" />
         <option value="$PROJECT_DIR$/api/docker/php-fpm.docker" />
+        <option value="$PROJECT_DIR$/websocet/index.js" />
+        <option value="$PROJECT_DIR$/websocet/.env.example" />
+        <option value="$PROJECT_DIR$/websocet/.env" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/frontend/.env.local" />
+        <option value="$PROJECT_DIR$/frontend/.env.local.example" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/frontend/src/main.js" />
+        <option value="$PROJECT_DIR$/websocket/package.json" />
+        <option value="$PROJECT_DIR$/websocket/public.key" />
+        <option value="$PROJECT_DIR$/websocket/index.js" />
+        <option value="$PROJECT_DIR$/frontend/src/components/Notifications.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/App.vue" />
+        <option value="$PROJECT_DIR$/api/src/Infrastructure/Model/EventDispatcher/Listener/Video/VideoCreatedListeners.php" />
+        <option value="$PROJECT_DIR$/websocket/.gitignore" />
       </list>
     </option>
   </component>
@@ -265,6 +538,7 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/frontend/node_modules" />
+    <handled-path value="$PROJECT_DIR$/websocket/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
@@ -346,10 +620,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="139" />
-    <option name="y" value="183" />
+    <option name="x" value="239" />
+    <option name="y" value="54" />
     <option name="width" value="1361" />
-    <option name="height" value="546" />
+    <option name="height" value="592" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -384,20 +658,7 @@
               <item name="slim" type="b2602c69:ProjectViewProjectNode" />
               <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="slim" type="b2602c69:ProjectViewProjectNode" />
@@ -420,6 +681,42 @@
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventDispatcher" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventDispatcher" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Listener" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EventDispatcher" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Listener" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
@@ -428,51 +725,40 @@
               <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="slim" type="b2602c69:ProjectViewProjectNode" />
               <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Processor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="slim" type="b2602c69:ProjectViewProjectNode" />
               <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Infrastructure" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Processor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FormatDetector" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Video" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Event" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="slim" type="b2602c69:ProjectViewProjectNode" />
               <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="slim" type="b2602c69:ProjectViewProjectNode" />
               <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="slim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="slim" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="video" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="websocket" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -523,16 +809,19 @@
       <workItem from="1549008919281" duration="7461000" />
       <workItem from="1549111473300" duration="3152000" />
       <workItem from="1549189512199" duration="14683000" />
+      <workItem from="1549390630489" duration="2787000" />
+      <workItem from="1549548907998" duration="6233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55207000" />
+    <option name="totallyTimeSpent" value="64227000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="139" y="183" width="1361" height="546" extended-state="0" />
+    <frame x="239" y="54" width="1361" height="592" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36590743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36590743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -565,203 +854,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Middleware/DomainExceptionMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#65#104#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config/container.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Framework/Middleware/CallableRequestHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Framework/Middleware/CallableMiddlewareAdapter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#84#121#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Middleware/ValidationExceptionMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Middleware/BodyParamsMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#78#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/ShowAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#113#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/ReadModel/User/DoctrineUserReadRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#79#115#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineAuthorReadRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#79#120#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManagerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3457">
-          <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/ReadModel/Video/DoctrineVideoReadRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#80#119#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Model/EntityNotFoundException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Entity/DoctrineVideoRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#83#121#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Thumbnailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegMp4Converter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#104#159#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Converter/FFMpegWebmConverter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#104#159#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/Thumbnailer/FFMpegThumbnailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#106#150#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/views/Profile/Show.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Video/Show.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Video/Upload.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="81" column="9" lean-forward="false" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/Video/CreateAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#74#107#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/Http/VideoUrl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,9 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-475">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#74#96#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1674">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1285">
           <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,9 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#33#55#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -805,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-252">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,9 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#93#130#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -823,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,7 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-730">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,25 +977,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="83" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/views/Author/Show.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
+        <state relative-caret-position="1242">
           <caret line="69" column="9" lean-forward="false" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,55 +991,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="378">
           <caret line="26" column="69" lean-forward="false" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/Global/debug.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Global/debug.php" />
     <entry file="file://$PROJECT_DIR$/api/src/Http/Action/Author/CreateAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="360">
           <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
+        <state relative-caret-position="720">
           <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/Video/Service/Processor/FormatDetector/FFProbeFormatDetector.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
+        <state relative-caret-position="630">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,8 +1029,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/public/video/19b9c359-c001-4f50-bbf4-321b41c72d3c_854x480.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/docker/php-fpm.docker">
@@ -997,9 +1045,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/public/video/19b9c359-c001-4f50-bbf4-321b41c72d3c_854x480.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/websocket/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="92" column="8" lean-forward="false" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/.env.local">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/.env.local.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/public.key">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/public.key">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="3" lean-forward="false" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Notifications.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="e#420#458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoCreated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoFileAdded.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Event/VideoRemoved.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Model/Video/Entity/Video/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1890">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/Infrastructure/Model/EventDispatcher/Listener/Video/VideoCreatedListeners.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="3" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
