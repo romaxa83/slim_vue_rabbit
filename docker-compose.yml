@@ -6,6 +6,8 @@ services:
             dockerfile: nginx.docker
         volumes:
             - ./frontend:/var/www/frontend
+        depends_on:
+          - api-php-fpm
         ports:
             - "8080:80"
     frontend-nodejs:
@@ -33,6 +35,7 @@ services:
         depends_on:
             - api-postgres
             - mailer
+            - rabbitmq
     api-php-cli:
         build:
             context: ./api/docker
@@ -43,6 +46,7 @@ services:
         depends_on:
             - api-postgres
             - mailer
+            - rabbitmq
         working_dir: /var/www/api
         tty: true 
 
@@ -91,3 +95,16 @@ services:
             - "8084:8000"
         working_dir: /var/www/websocket
         tty: true
+
+    rabbitmq:
+        image: rabbitmq:3-management
+        environment:
+            RABBITMQ_ERLANG_COOKIE: SWQOKODSQALRPCLNMEQG
+            RABBITMQ_DEFAULT_USER: rabbit
+            RABBITMQ_DEFAULT_PASS: rabbit
+        ports:
+            - "8085:15672" # порт по которому открываеться админка rabbit
+            - "5672:5672" # порт по которому работает rabbit
+        volumes:
+                # прокидаваем конфиг для плагинов
+            - ./rabbitmq/docker/enabled_plugins:/etc/rabbitmq/enabled_plugins

@@ -17,9 +17,9 @@ return [
                 UserModel\Entity\User\Event\UserCreated::class => [
                     Listener\User\CreatedListener::class,
                 ],
-//                VideoModel\Entity\Video\Event\VideoCreated::class => [
-//                    Listener\Video\VideoCreatedListener::class,
-//                ],
+                VideoModel\Entity\Video\Event\VideoCreated::class => [
+                    Listener\Video\VideoCreatedListener::class,
+                ],
             ]
         );
     },
@@ -29,9 +29,9 @@ return [
             $container->get('config')['mailer']['from']
         );
     },
-//    Listener\Video\VideoCreatedListener::class => function (ContainerInterface $container) {
-//        return new Listener\Video\VideoCreatedListener(
-//            $container->get(AMQPStreamConnection::class)
-//        );
-//    },
+    Listener\Video\VideoCreatedListener::class => function (ContainerInterface $container) {
+        return new Listener\Video\VideoCreatedListener(
+            $container->get(AMQPStreamConnection::class)
+        );
+    },
 ];
